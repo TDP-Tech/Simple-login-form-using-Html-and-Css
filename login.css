@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #dbdfe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2, green, blue, alpha);
+    width: 350px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.social-login{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.google-btn, .github-btn{
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.google-btn {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.github-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.divider{
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.divider span{
+    background-color: #fff;
+    padding: 0 10px;
+    color: #777;
+    position: relative;
+    z-index: 1;
+}
+
+.divider::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #5a4fcf;
+}
+
+.signup-link{
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.signup-link a{
+    color: #6a5acd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
